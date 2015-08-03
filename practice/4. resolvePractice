@@ -5,7 +5,11 @@
         templateUrl: 'templates/add_order.html',
         controller: 'AddOrderController',
         resolve: {
-          ...
+          delay: function($q, $timeout) {
+          var delay = $q.defer();
+          $timeout(delay.resolve, 1000);
+          return delay.promise;
+          }
         }
     })
 
@@ -16,7 +20,13 @@
       when('/AddNewOrder', {
         templateUrl: 'templates/add_order.html',
         controller: 'AddOrderController',
-        resolve: ...
+        resolve: {
+          delay: function($q, $timeout) {
+          var delay = $q.defer();
+          $timeout(delay.resolve, 1000);
+          return delay.promise;
+          }
+        }
     })
 
 
@@ -26,5 +36,11 @@
       when('/AddNewOrder', {
         templateUrl: 'templates/add_order.html',
         controller: 'AddOrderController',
-        ... : ...
+         resolve: {
+          delay: function($q, $timeout) {
+          var delay = $q.defer();
+          $timeout(delay.resolve, 1000);
+          return delay.promise;
+          }
+        }
     })

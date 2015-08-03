@@ -5,7 +5,7 @@ app.service('DataService', function(){
 			{ name: 'Sara', description: 'Sara loves pie'},
 			{ name: 'Joe', description: 'Joe loves cookies'},
 			{ name: 'Michelle', description: 'Michelle loves brownies'},
-			{ name: 'Dave', description: 'Dave loves Dave'}
+			{ name: 'Dave', description: 'Dave loves himself'}
 		]
 	}
 });
