@@ -11,4 +11,7 @@ app.config(['$routeProvider', function(routeProvider) {
 			templateUrl: 'app/templates/details_template.html',
 			controller: 'DetailsController'
 		})
+		.otherwise({
+			redirectTo: '/people'
+		})
 }])
